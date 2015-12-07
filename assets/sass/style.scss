@@ -1,0 +1,116 @@
+/***** Button Section ******/
+@mixin btn($button-color) {
+  color: $button-color;
+  border: 1px solid $button-color;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin: 10px;
+  font-size: 24px;
+  &:hover {
+    color: white;
+    background-color: $button-color;
+  }
+}
+@keyframes rainbowizer {
+  0%,
+  100% {
+    color: black;
+  }
+  10%,
+  90% {
+    color: red;
+  }
+  20%,
+  80% {
+    color: orange;
+  }
+  30%,
+  70% {
+    color: yellow;
+  }
+  40%,
+  60% {
+    color: green;
+  }
+  50% {
+    color: blue;
+  }
+}
+.button-examples {
+  text-align: center;
+}
+.button-div {
+  display: inline-block;
+}
+input[type="button"] {
+  cursor: pointer;
+}
+hr.bottom {
+  margin-bottom: 50px;
+}
+.button-stop {
+  @include btn(red);
+}
+.button-caution {
+  @include btn(#FFC200);
+}
+.button-continue {
+  @include btn(green);
+}
+.button-wtf {
+  @include btn(black);
+  background-image: linear-gradient( to right, red, orange, yellow, green );
+  &:hover {
+    color: hotpink;
+    border: 1px solid hotpink;
+    animation: rainbowizer 1.5s infinite;
+  }
+}
+.button-annoying {
+  @include btn(black);
+  transform: rotate(-4deg);
+  &:hover {
+    transform: translateY(-58px);
+  }
+}
+/****** Nav Section ******/
+@keyframes nav-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+li.top-nav-items {
+  color: black;
+  display: inline-block;
+  margin-right: 200px;
+  cursor: pointer;
+  background-color: #8ccd6e;
+  padding: 10px 20px;
+  vertical-align: top;
+  position: relative;
+  text-align: center;
+}
+li.top-nav-items:hover .sub-nav-items {
+  display: block;
+  animation: nav-fade 0.4s;
+}
+.sub-nav-items li:hover {
+  background-color: #207681;
+}
+.sub-nav-items {
+  display: none;
+  // white-space: nowrap;
+  list-style-type: none;
+  position: absolute;
+  // width: 300px;
+  padding: 0;
+  background-color: #8ccd6e;
+  width: 100px;
+  margin-left: -20px;
+  margin-top: 10px;
+}

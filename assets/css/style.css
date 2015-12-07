@@ -1,0 +1,139 @@
+/***** Button Section ******/
+@keyframes rainbowizer {
+  0%,
+  100% {
+    color: black; }
+  10%,
+  90% {
+    color: red; }
+  20%,
+  80% {
+    color: orange; }
+  30%,
+  70% {
+    color: yellow; }
+  40%,
+  60% {
+    color: green; }
+  50% {
+    color: blue; } }
+.button-examples {
+  text-align: center; }
+
+.button-div {
+  display: inline-block; }
+
+input[type="button"] {
+  cursor: pointer; }
+
+hr.bottom {
+  margin-bottom: 50px; }
+
+.button-stop {
+  color: red;
+  border: 1px solid red;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin: 10px;
+  font-size: 24px; }
+  .button-stop:hover {
+    color: white;
+    background-color: red; }
+
+.button-caution {
+  color: #FFC200;
+  border: 1px solid #FFC200;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin: 10px;
+  font-size: 24px; }
+  .button-caution:hover {
+    color: white;
+    background-color: #FFC200; }
+
+.button-continue {
+  color: green;
+  border: 1px solid green;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin: 10px;
+  font-size: 24px; }
+  .button-continue:hover {
+    color: white;
+    background-color: green; }
+
+.button-wtf {
+  color: black;
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin: 10px;
+  font-size: 24px;
+  background-image: linear-gradient(to right, red, orange, yellow, green); }
+  .button-wtf:hover {
+    color: white;
+    background-color: black; }
+  .button-wtf:hover {
+    color: hotpink;
+    border: 1px solid hotpink;
+    animation: rainbowizer 1.5s infinite; }
+
+.button-annoying {
+  color: black;
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  margin: 10px;
+  font-size: 24px;
+  transform: rotate(-4deg); }
+  .button-annoying:hover {
+    color: white;
+    background-color: black; }
+  .button-annoying:hover {
+    transform: translateY(-58px); }
+
+/****** Nav Section ******/
+@keyframes nav-fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+li.top-nav-items {
+  color: black;
+  display: inline-block;
+  margin-right: 200px;
+  cursor: pointer;
+  background-color: #8ccd6e;
+  padding: 10px 20px;
+  vertical-align: top;
+  position: relative;
+  text-align: center; }
+
+li.top-nav-items:hover .sub-nav-items {
+  display: block;
+  animation: nav-fade 0.4s; }
+
+.sub-nav-items li:hover {
+  background-color: #207681; }
+
+.sub-nav-items {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  padding: 0;
+  background-color: #8ccd6e;
+  width: 100px;
+  margin-left: -20px;
+  margin-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */
