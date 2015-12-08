@@ -123,31 +123,241 @@ li.top-nav-items {
 
 /****** Content Tile *****/
 
+
+.all-the-tiles {
+  text-align: center;
+}
+
+.tile-container {
+  vertical-align: top;
+  margin: 20px;
+  height: 370px;
+  position: relative;
+  text-align: left;
+  transition: all .5s ease;
+  cursor: pointer;
+
+  // &:hover {
+  //       box-shadow: 0px 0px 15px black;
+  // }
+}
+
 /***** Contents for a Bill Murray *******/
 $tile-title-murray: "Bill Murray";
 
-$tile-image-murray: url(../images/fill-murray1.jpg);
+$tile-image-murray: url(../images/murray.jpeg);
 
-$tile-content-murray: "You guys have it real easy. I never had it like this where I grew up. But I send my kids here because the fact is you go to one of the best schools in the country: Rushmore. Now, for some of you it doesn't matter. You were born rich and you're going to stay rich. But here's my advice to the rest of you: Take dead aim on the rich boys. Get them in the crosshairs and take them down. Just remember, they can buy anything but they can't buy backbone. Don't let them forget it. Thank you.";
+$tile-content-murray: "We came, we saw, we kicked its ass!";
 
+.murray {
 
-$tile-image2: url(../images/fill-murray2.jpg);
-$tile-image3: url(../images/fill-murray3.jpg);
+  &.tile-container {
+    width: 300px;
+    box-shadow: 0px 0px 10px #979797;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
 
-.tile-container {
-  border: 1px solid black;
-  width: 300px;
-  padding: 5px;
+      &:hover {
+        box-shadow: 0px 0px 15px black;
 
-  & .img-container {
-    content: $tile-image-murray;
+        & .img-container{
+          transform: scale(1.5);
+          width: 300px;
+        }
+      }
+
+    & .img-container {
+      content: $tile-image-murray;
+      overflow: hidden;
+    }
+
+    & .tile-title {
+      margin: 10px 10px 5px;
+      font-size: 24px;
+    }
+
+    & .tile-title:after {
+      content: $tile-title-murray;
+      font-size: 20px;
+    }
+
+    & .tile-text {
+      margin: 10px;
+    }
+
+    & .tile-text:after {
+      content: $tile-content-murray;
+    }
+
+    & .link-container {
+      padding-left: 20px;
+      position: absolute;
+      bottom: 0px;
+    }
+
+    & a {
+      display: inline-block;
+      text-decoration: none;
+      color: #FFAB40;
+      padding: 5px 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      transition: all .5s ease;
+      border: 1px solid transparent;
+
+      &:first-of-type {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        font-weight: 900;
+        border: 1px solid #ffab40;
+        border-radius: 2px;
+      }
+    }
   }
+}
 
-  & .tile-title:after {
-    content: $tile-title-murray;
+
+/******* Contents for Marty McFly ******/
+
+$tile-title-mcfly: "Marty McFly";
+
+$tile-image-mcfly: url(../images/mcfly.png);
+
+$tile-content-mcfly: "Wait a minute. Wait a minute, Doc. Ah... Are you telling me that you built a time machine... out of a DeLorean?";
+
+.mcfly {
+
+  &.tile-container {
+    width: 300px;
+    box-shadow: 0px 0px 10px #979797;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+
+    &:hover {
+      box-shadow: 0px 0px 15px black;
+    }
+
+    & .img-container {
+      content: $tile-image-mcfly;
+    }
+
+    & .tile-title {
+      margin: 10px 10px 5px;
+      font-size: 24px;
+    }
+
+    & .tile-title:after {
+      content: $tile-title-mcfly;
+      font-size: 20px;
+    }
+
+    & .tile-text {
+      margin: 10px;
+    }
+
+    & .tile-text:after {
+      content: $tile-content-mcfly;
+    }
+
+    & .link-container {
+      padding-left: 20px;
+    }
+
+    & a {
+      display: inline-block;
+      text-decoration: none;
+      color: #FFAB40;
+      padding: 5px 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      transition: all .5s ease;
+      border: 1px solid transparent;
+
+      &:first-of-type {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        font-weight: 900;
+        border: 1px solid #ffab40;
+        border-radius: 2px;
+      }
+    }
   }
+}
 
-  & .tile-text:after {
-    content: $tile-content-murray;
+/****** Content for Homer Simpson *******/
+
+$tile-title-homer: "Homer Simpson";
+
+$tile-image-homer: url(../images/homer.jpg);
+
+$tile-content-homer: "It's not whether you win or lose.  It's how drunk you get.";
+
+.homer {
+
+  &.tile-container {
+    width: 300px;
+    box-shadow: 0px 0px 10px #979797;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+
+    &:hover {
+      box-shadow: 0px 0px 15px black;
+    }
+
+    & .img-container {
+      content: $tile-image-homer;
+    }
+
+    & .tile-title {
+      margin: 10px 10px 5px;
+      font-size: 24px;
+    }
+
+    & .tile-title:after {
+      content: $tile-title-homer;
+      font-size: 20px;
+    }
+
+    & .tile-text {
+      margin: 10px;
+    }
+
+    & .tile-text:after {
+      content: $tile-content-homer;
+    }
+
+    & .link-container {
+      padding-left: 20px;
+      position: absolute;
+      bottom: 0px;
+    }
+
+    & a {
+      display: inline-block;
+      text-decoration: none;
+      color: #FFAB40;
+      padding: 5px 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      transition: all .5s ease;
+      border: 1px solid transparent;
+
+      &:first-of-type {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        font-weight: 900;
+        border: 1px solid #ffab40;
+        border-radius: 2px;
+      }
+    }
   }
 }

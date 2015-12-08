@@ -138,16 +138,141 @@ li.top-nav-items {
     background-color: #207681; }
 
 /****** Content Tile *****/
-/***** Contents for a Bill Murray *******/
+.all-the-tiles {
+  text-align: center; }
+
 .tile-container {
-  border: 1px solid black;
+  vertical-align: top;
+  margin: 20px;
+  height: 370px;
+  position: relative;
+  text-align: left;
+  transition: all .5s ease;
+  cursor: pointer; }
+
+/***** Contents for a Bill Murray *******/
+.murray.tile-container {
   width: 300px;
-  padding: 5px; }
-  .tile-container .img-container {
-    content: url(../images/fill-murray1.jpg); }
-  .tile-container .tile-title:after {
-    content: "Bill Murray"; }
-  .tile-container .tile-text:after {
-    content: "You guys have it real easy. I never had it like this where I grew up. But I send my kids here because the fact is you go to one of the best schools in the country: Rushmore. Now, for some of you it doesn't matter. You were born rich and you're going to stay rich. But here's my advice to the rest of you: Take dead aim on the rich boys. Get them in the crosshairs and take them down. Just remember, they can buy anything but they can't buy backbone. Don't let them forget it. Thank you."; }
+  box-shadow: 0px 0px 10px #979797;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block; }
+  .murray.tile-container:hover {
+    box-shadow: 0px 0px 15px black; }
+    .murray.tile-container:hover .img-container {
+      transform: scale(1.5);
+      width: 300px; }
+  .murray.tile-container .img-container {
+    content: url(../images/murray.jpeg);
+    overflow: hidden; }
+  .murray.tile-container .tile-title {
+    margin: 10px 10px 5px;
+    font-size: 24px; }
+  .murray.tile-container .tile-title:after {
+    content: "Bill Murray";
+    font-size: 20px; }
+  .murray.tile-container .tile-text {
+    margin: 10px; }
+  .murray.tile-container .tile-text:after {
+    content: "We came, we saw, we kicked its ass!"; }
+  .murray.tile-container .link-container {
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0px; }
+  .murray.tile-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFAB40;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: all .5s ease;
+    border: 1px solid transparent; }
+    .murray.tile-container a:first-of-type {
+      margin-right: 10px; }
+    .murray.tile-container a:hover {
+      font-weight: 900;
+      border: 1px solid #ffab40;
+      border-radius: 2px; }
+
+/******* Contents for Marty McFly ******/
+.mcfly.tile-container {
+  width: 300px;
+  box-shadow: 0px 0px 10px #979797;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block; }
+  .mcfly.tile-container:hover {
+    box-shadow: 0px 0px 15px black; }
+  .mcfly.tile-container .img-container {
+    content: url(../images/mcfly.png); }
+  .mcfly.tile-container .tile-title {
+    margin: 10px 10px 5px;
+    font-size: 24px; }
+  .mcfly.tile-container .tile-title:after {
+    content: "Marty McFly";
+    font-size: 20px; }
+  .mcfly.tile-container .tile-text {
+    margin: 10px; }
+  .mcfly.tile-container .tile-text:after {
+    content: "Wait a minute. Wait a minute, Doc. Ah... Are you telling me that you built a time machine... out of a DeLorean?"; }
+  .mcfly.tile-container .link-container {
+    padding-left: 20px; }
+  .mcfly.tile-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFAB40;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: all .5s ease;
+    border: 1px solid transparent; }
+    .mcfly.tile-container a:first-of-type {
+      margin-right: 10px; }
+    .mcfly.tile-container a:hover {
+      font-weight: 900;
+      border: 1px solid #ffab40;
+      border-radius: 2px; }
+
+/****** Content for Homer Simpson *******/
+.homer.tile-container {
+  width: 300px;
+  box-shadow: 0px 0px 10px #979797;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block; }
+  .homer.tile-container:hover {
+    box-shadow: 0px 0px 15px black; }
+  .homer.tile-container .img-container {
+    content: url(../images/homer.jpg); }
+  .homer.tile-container .tile-title {
+    margin: 10px 10px 5px;
+    font-size: 24px; }
+  .homer.tile-container .tile-title:after {
+    content: "Homer Simpson";
+    font-size: 20px; }
+  .homer.tile-container .tile-text {
+    margin: 10px; }
+  .homer.tile-container .tile-text:after {
+    content: "It's not whether you win or lose.  It's how drunk you get."; }
+  .homer.tile-container .link-container {
+    padding-left: 20px;
+    position: absolute;
+    bottom: 0px; }
+  .homer.tile-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFAB40;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: all .5s ease;
+    border: 1px solid transparent; }
+    .homer.tile-container a:first-of-type {
+      margin-right: 10px; }
+    .homer.tile-container a:hover {
+      font-weight: 900;
+      border: 1px solid #ffab40;
+      border-radius: 2px; }
 
 /*# sourceMappingURL=style.css.map */
