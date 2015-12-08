@@ -84,33 +84,70 @@ hr.bottom {
     opacity: 1;
   }
 }
+
+.nav-container {
+  text-align: center;
+}
+
 li.top-nav-items {
   color: black;
   display: inline-block;
-  margin-right: 200px;
+  margin-right: 5%;
   cursor: pointer;
   background-color: #8ccd6e;
   padding: 10px 20px;
   vertical-align: top;
   position: relative;
   text-align: center;
+
+  &:hover .sub-nav-items {
+    display: block;
+    animation: nav-fade 0.4s;
+  }
 }
-li.top-nav-items:hover .sub-nav-items {
-  display: block;
-  animation: nav-fade 0.4s;
-}
-.sub-nav-items li:hover {
-  background-color: #207681;
-}
+
 .sub-nav-items {
   display: none;
-  // white-space: nowrap;
   list-style-type: none;
   position: absolute;
-  // width: 300px;
   padding: 0;
   background-color: #8ccd6e;
   width: 100px;
   margin-left: -20px;
   margin-top: 10px;
+
+  & li:hover {
+    background-color: #207681;
+  }
+}
+
+/****** Content Tile *****/
+
+/***** Contents for a Bill Murray *******/
+$tile-title-murray: "Bill Murray";
+
+$tile-image-murray: url(../images/fill-murray1.jpg);
+
+$tile-content-murray: "You guys have it real easy. I never had it like this where I grew up. But I send my kids here because the fact is you go to one of the best schools in the country: Rushmore. Now, for some of you it doesn't matter. You were born rich and you're going to stay rich. But here's my advice to the rest of you: Take dead aim on the rich boys. Get them in the crosshairs and take them down. Just remember, they can buy anything but they can't buy backbone. Don't let them forget it. Thank you.";
+
+
+$tile-image2: url(../images/fill-murray2.jpg);
+$tile-image3: url(../images/fill-murray3.jpg);
+
+.tile-container {
+  border: 1px solid black;
+  width: 300px;
+  padding: 5px;
+
+  & .img-container {
+    content: $tile-image-murray;
+  }
+
+  & .tile-title:after {
+    content: $tile-title-murray;
+  }
+
+  & .tile-text:after {
+    content: $tile-content-murray;
+  }
 }
