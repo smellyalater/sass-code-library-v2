@@ -147,21 +147,18 @@ li.top-nav-items {
   height: 370px;
   position: relative;
   text-align: left;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   cursor: pointer; }
 
 /***** Contents for a Bill Murray *******/
 .murray.tile-container {
   width: 300px;
-  box-shadow: 0px 0px 10px #979797;
+  box-shadow: 0 0 10px #979797;
   border-radius: 2px;
   font-family: 'Roboto', sans-serif;
   display: inline-block; }
   .murray.tile-container:hover {
-    box-shadow: 0px 0px 15px black; }
-    .murray.tile-container:hover .img-container {
-      transform: scale(1.5);
-      width: 300px; }
+    box-shadow: 0 0 15px black; }
   .murray.tile-container .img-container {
     content: url(../images/murray.jpeg);
     overflow: hidden; }
@@ -178,7 +175,7 @@ li.top-nav-items {
   .murray.tile-container .link-container {
     padding-left: 20px;
     position: absolute;
-    bottom: 0px; }
+    bottom: 0; }
   .murray.tile-container a {
     display: inline-block;
     text-decoration: none;
@@ -186,7 +183,7 @@ li.top-nav-items {
     padding: 5px 10px;
     margin-bottom: 20px;
     font-size: 16px;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     border: 1px solid transparent; }
     .murray.tile-container a:first-of-type {
       margin-right: 10px; }
@@ -198,12 +195,12 @@ li.top-nav-items {
 /******* Contents for Marty McFly ******/
 .mcfly.tile-container {
   width: 300px;
-  box-shadow: 0px 0px 10px #979797;
+  box-shadow: 0 0 10px #979797;
   border-radius: 2px;
   font-family: 'Roboto', sans-serif;
   display: inline-block; }
   .mcfly.tile-container:hover {
-    box-shadow: 0px 0px 15px black; }
+    box-shadow: 0 0 15px black; }
   .mcfly.tile-container .img-container {
     content: url(../images/mcfly.png); }
   .mcfly.tile-container .tile-title {
@@ -225,7 +222,7 @@ li.top-nav-items {
     padding: 5px 10px;
     margin-bottom: 20px;
     font-size: 16px;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     border: 1px solid transparent; }
     .mcfly.tile-container a:first-of-type {
       margin-right: 10px; }
@@ -237,12 +234,12 @@ li.top-nav-items {
 /****** Content for Homer Simpson *******/
 .homer.tile-container {
   width: 300px;
-  box-shadow: 0px 0px 10px #979797;
+  box-shadow: 0 0 10px #979797;
   border-radius: 2px;
   font-family: 'Roboto', sans-serif;
   display: inline-block; }
   .homer.tile-container:hover {
-    box-shadow: 0px 0px 15px black; }
+    box-shadow: 0 0 15px black; }
   .homer.tile-container .img-container {
     content: url(../images/homer.jpg); }
   .homer.tile-container .tile-title {
@@ -254,11 +251,11 @@ li.top-nav-items {
   .homer.tile-container .tile-text {
     margin: 10px; }
   .homer.tile-container .tile-text:after {
-    content: "It's not whether you win or lose.  It's how drunk you get."; }
+    content: "It's not whether you win or lose. It's how drunk you get."; }
   .homer.tile-container .link-container {
     padding-left: 20px;
     position: absolute;
-    bottom: 0px; }
+    bottom: 0; }
   .homer.tile-container a {
     display: inline-block;
     text-decoration: none;
@@ -266,7 +263,7 @@ li.top-nav-items {
     padding: 5px 10px;
     margin-bottom: 20px;
     font-size: 16px;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     border: 1px solid transparent; }
     .homer.tile-container a:first-of-type {
       margin-right: 10px; }
